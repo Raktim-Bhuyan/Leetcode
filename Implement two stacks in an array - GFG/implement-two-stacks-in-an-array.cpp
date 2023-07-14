@@ -26,39 +26,38 @@ class twoStacks
     //Function to push an integer into the stack1.
     void push1(int x)
     {
-        s1.push(x);
+        if(top2 - top1>1){
+        top1++;
+        arr[top1] = x;}
     }
     
     //Function to push an integer into the stack2.
     void push2(int x)
     {
-       s2.push(x);
+        if(top2- top1>1){
+       top2--;
+       arr[top2] = x;}
     }
     
     //Function to remove an element from top of the stack1.
     int pop1()
     {
-        if(!s1.empty()){
-            int x = s1.top();
-            s1.pop();
-            return x;
-        }
-        else{
-            return -1;
-        }
+        if(top1>=0){
+        int ans = arr[top1];
+        top1--;
+        return ans;}
+        return -1;
     }
     
     //Function to remove an element from top of the stack2.
     int pop2()
     {
-       if(!s2.empty()){
-            int x = s2.top();
-            s2.pop();
-            return x;
+        if(top2<size){
+            int ans = arr[top2];
+            top2++;
+            return ans;
         }
-        else{
-            return -1;
-        }
+        return -1;
     }
 };
 
