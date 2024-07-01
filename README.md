@@ -29,3 +29,10 @@ For initializing :
 UnionFind Alice;
 Alice.init(n); //all n nodes are different components initially
 ```
+<h3>Lambda Functions</h3>
+```
+auto lambda = [&](vector<int>&vec1,vector<int>&vec2){
+            return vec1[0]>vec2[0];
+        };
+        sort(edges.begin(),edges.end(),lambda);
+```
