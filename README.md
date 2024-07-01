@@ -1,6 +1,6 @@
-# Leetcode
+# Commonly used Templates
 
-<h3>Commonly used templates</h3>
+<h3>DSU</h3>
 
 ```
 class UnionFind {
