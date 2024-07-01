@@ -2,7 +2,7 @@
 
 <h3>Commonly used templates</h3>
 
-
+```
 class UnionFind {
 public:
     vector<int> par;
@@ -24,3 +24,4 @@ public:
         return false;
     }
 };
+```
