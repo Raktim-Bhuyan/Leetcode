@@ -25,5 +25,7 @@ public:
 };
 ```
 For initializing : 
+```
 UnionFind Alice;
-Alice.init(n); //all n nodes are different components initially 
+Alice.init(n); //all n nodes are different components initially
+```
